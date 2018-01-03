@@ -8,7 +8,7 @@ def initialize(name, grade, id= nil)
 @id = id
 end
 
-def create_table
+def self.create_table
 sql = <<-SQL
 CREATE TABLE IF NOT EXISTS howdy(
   id INTEGER PRIMARY KEY,
